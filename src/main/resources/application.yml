@@ -1,0 +1,18 @@
+# Vue port 8080
+server:
+  port: 8081
+
+# DB info
+spring:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:log4jdbc:mysql://localhost:3306/board_study?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=FALSE
+      username: root
+      password: admin1234
+      driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+
+#mybatis setting
+mybatis:
+  config-location: mybatis-config.xml
+  mapper-locations: mybatis/mapper/*.xml
+  #type-aliases-package: board.study.dto
